@@ -1,5 +1,5 @@
 # retinal-vessel-segmentation
-U-Net model for retinal blood vessel segmentation using DRIVE dataset and Gradio interface.
+Proposed model for retinal blood vessel segmentation using DRIVE dataset and Gradio interface and depend on U-Net.
 # Retinal Blood Vessel Segmentation - Model Comparison
 
 This project segments retinal blood vessels using a U-Net based model. Below is a comparison of different models on the **DRIVE dataset**.
@@ -21,5 +21,55 @@ This project segments retinal blood vessels using a U-Net based model. Below is 
 ---
 
 ## Visual Comparison (Example)
+<img width="1058" height="647" alt="image" src="https://github.com/user-attachments/assets/fb3fae85-2222-4254-b622-5a1a4f4b4cfb" />
 
-![Uploading image.png…]()
+## Dataset
+
+The retinal images dataset is publicly available on Kaggle:
+
+[Retina Blood Vessel Dataset](https://www.kaggle.com/datasets/abdallahwagih/retina-blood-vessel)  
+
+You can download it and use it to train or test the model.
+
+---
+
+## Demo
+
+<img width="1918" height="923" alt="Result" src="https://github.com/user-attachments/assets/a17feee4-1c84-406d-9574-1dc0e412d35c" />
+
+
+---
+
+## Requirements
+
+Python **3.11** must be installed on your system.
+
+All required packages are listed in `requirements.txt`:
+
+```text
+torch
+torchvision
+numpy
+opencv-python
+Pillow
+gradio
+
+##How to Run Locally
+###Clone or download the repository:
+git clone https://github.com/MohamadAdnanAlokla/retinal-vessel-segmentation.git
+cd retinal-vessel-segmentation
+
+###Create a virtual environment:
+python -m venv venv
+
+###Activate the environment:
+
+Windows PowerShell:.\venv\Scripts\Activate.ps1
+
+###Install required packages
+
+pip install -r requirements.txt
+
+###Run the Gradio app:
+python app.py
+
