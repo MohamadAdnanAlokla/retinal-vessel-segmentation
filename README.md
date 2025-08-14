@@ -22,28 +22,4 @@ This project segments retinal blood vessels using a U-Net based model. Below is 
 
 ## Visual Comparison (Example)
 
-We can plot **Accuracy, Sensitivity, and F1-Score** for a quick comparison:
-
-```python
-import matplotlib.pyplot as plt
-import numpy as np
-
-models = ["U-Net", "Sine-Net", "RFARN", "BLCB-CNN", "Dense-U-Net", "Ensemble", "Proposed"]
-accuracy = [0.9739, 0.9712, 0.9712, 0.9622, 0.9559, 0.9778, 0.9601]
-sensitivity = [0.7512, 0.8788, 0.8453, 0.8157, 0, 0.7790, 0.9188]  # use 0 for N/A
-f1_score = [0.7933, 0, 0.8453, 0, 0, 0.8231, 0.7097]  # use 0 for N/A
-
-x = np.arange(len(models))
-width = 0.25
-
-plt.bar(x - width, accuracy, width, label='Accuracy')
-plt.bar(x, sensitivity, width, label='Sensitivity')
-plt.bar(x + width, f1_score, width, label='F1-Score')
-
-plt.xticks(x, models, rotation=30)
-plt.ylabel("Score")
-plt.title("Model Performance Comparison on DRIVE Dataset")
-plt.legend()
-plt.tight_layout()
-plt.savefig("examples/model_comparison.png")
-plt.show()
+![Uploading image.png…]()
