@@ -39,37 +39,28 @@ You can download it and use it to train or test the model.
 
 
 ---
+## Run the Project Locally
 
-## Requirements
+Make sure **Python 3.11** is installed on your system. You can download it from [python.org](https://www.python.org/downloads/release/python-3110/).
 
-Python **3.11** must be installed on your system.
+Then follow these steps:
 
-All required packages are listed in `requirements.txt`:
-
-```text
-torch
-torchvision
-numpy
-opencv-python
-Pillow
-gradio
-
-##How to Run Locally
-###Clone or download the repository:
+```bash
+# 1. Clone the repository
 git clone https://github.com/MohamadAdnanAlokla/retinal-vessel-segmentation.git
 cd retinal-vessel-segmentation
 
-###Create a virtual environment:
+# 2. Create a virtual environment
 python -m venv venv
 
-###Activate the environment:
+# 3. Activate the virtual environment
+# Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+# Linux / Mac:
+source venv/bin/activate
 
-Windows PowerShell:.\venv\Scripts\Activate.ps1
-
-###Install required packages
-
+# 4. Install required packages
 pip install -r requirements.txt
 
-###Run the Gradio app:
+# 5. Run the Gradio app
 python app.py
-
